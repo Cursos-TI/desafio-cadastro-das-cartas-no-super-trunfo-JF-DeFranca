@@ -6,6 +6,7 @@ int main() {
     //Variáveis carta 1
 
     char codigo[4];
+    char estado[4];
     char nome[20];
     int populacao;
     float area;
@@ -15,6 +16,7 @@ int main() {
     //Variáveis carta 2
 
     char codigo2[4];
+    char estado2[4];
     char nome2[20];
     int populacao2;
     float area2;
@@ -28,6 +30,9 @@ int main() {
 
     printf("Vamos cadastrar a primeira carta, digite o codigo da carta 1: ");
     scanf("%s", &codigo);
+
+    printf("Digite o estado da carta 1: ");
+    scanf("%s", &estado);
 
     printf("Qual o nome da cidade da carta 1: ");
     scanf("%s", &nome);
@@ -53,6 +58,9 @@ int main() {
     
     printf("Vamos cadastrar a segunda carta, digite o codigo da carta 2: ");
     scanf("%s", &codigo2);
+
+    printf("Digite o estado da carta 1: ");
+    scanf("%s", &estado2);
 
     printf("Qual o nome da cidade da carta 2: ");
     scanf("%s", &nome2);
@@ -80,6 +88,8 @@ int main() {
 
     printf("Codigo da carta 1: %s\n", codigo);
 
+    printf("Estado da carta 1: %s\n", estado);
+
     printf("Cidade da carta 1 %s\n", nome);
 
     printf("Populacao da carta 1: %.d\n", populacao);
@@ -97,6 +107,8 @@ int main() {
     printf("Carta 2\n");
 
     printf("Codigo da carta 2 %s\n", codigo2);
+
+    printf("Estado da carta 1: %s\n", estado2);
 
     printf("Cidade da carta 2 %s\n", nome2);
 
