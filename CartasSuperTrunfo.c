@@ -180,19 +180,6 @@ int main() {
 
 
 
- 
- /*   printf("População: Carta 1 venceu (%d)\n", populacao > populacao2);
-    printf("Área: Carta 1 venceu (%d)\n", area > area2);
-    printf("PIB: Carta 1 venceu (%d)\n", pib > pib2);
-    printf("Pontos Turisticos: Carta 1 venceu (%d)\n", pontos_turisticos > pontos_turisticos2);
-    printf("Densidade Populacional: Carta 1 venceu (%d)\n", densidadepop < densidadepop2);
-    printf("PIB per Capita: Carta 1 venceu (%d)\n", pibpercapita > pibpercapita2);
-    printf("Super Poder: Carta 1 venceu (%d)\n", super_poder > super_poder2); */
-
- 
-
-
-
 
 
 
