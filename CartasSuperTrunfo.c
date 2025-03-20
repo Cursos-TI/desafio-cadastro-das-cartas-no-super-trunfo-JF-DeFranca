@@ -129,17 +129,67 @@ int main() {
 
 
 
-    // Comparação das cartas
+    // Comparação das Cartas
 
-    printf("\n****COMPARAÇÃO DAS CARTAS****\n");
-    printf("População: Carta 1 venceu (%d)\n", populacao > populacao2);
+    printf("\n====COMPARAÇÃO DAS CARTAS====\n");
+
+    if (populacao > populacao2){
+        printf("POPULAÇÃO -- Carta 1 Venceu!\n");
+    } else {
+        printf("POPULAÇÃO -- Carta 2 Venceu!\n");
+    }
+
+    if (area > area2){
+        printf("ÁREA -- Carta 1 Venceu!\n");
+    } else {
+        printf("ÁREA -- Carta 2 Venceu!\n");
+    }
+
+    if (pib > pib2){
+        printf("PIB -- Carta 1 Venceu!\n");
+    } else {
+        printf("PIB -- Carta 2 Venceu!\n");
+    }
+
+    if (pontos_turisticos > pontos_turisticos2){
+        printf("PONTOS TURÍSTICOS -- Carta 1 Venceu!\n");
+    } else {
+        printf("PONTOS TURÍSTICOS -- Carta 2 Venceu!\n");
+    }
+
+    if (densidadepop < densidadepop2){
+        printf("DENSIDADE POPULACIONAL -- Carta 1 Venceu!\n");
+    } else {
+        printf("DENSIDADE POPULACIONAL -- Carta 2 Venceu!\n");
+    }
+
+    if (pibpercapita > pibpercapita2){
+        printf("PIB PER CAPITA -- Carta 1 Venceu!\n");
+    } else {
+        printf("PIB PER CAPITA -- Carta 2 Venceu!\n");
+    }
+
+    if (super_poder > super_poder2){
+        printf("SUPER PODER -- Carta 1 Venceu!\n");
+    } else {
+        printf("SUPER PODER -- Carta 2 Venceu!\n");
+    }
+
+
+
+
+
+
+ 
+ /*   printf("População: Carta 1 venceu (%d)\n", populacao > populacao2);
     printf("Área: Carta 1 venceu (%d)\n", area > area2);
     printf("PIB: Carta 1 venceu (%d)\n", pib > pib2);
     printf("Pontos Turisticos: Carta 1 venceu (%d)\n", pontos_turisticos > pontos_turisticos2);
     printf("Densidade Populacional: Carta 1 venceu (%d)\n", densidadepop < densidadepop2);
     printf("PIB per Capita: Carta 1 venceu (%d)\n", pibpercapita > pibpercapita2);
-    printf("Super Poder: Carta 1 venceu (%d)\n", super_poder > super_poder2);
+    printf("Super Poder: Carta 1 venceu (%d)\n", super_poder > super_poder2); */
 
+ 
 
 
 
