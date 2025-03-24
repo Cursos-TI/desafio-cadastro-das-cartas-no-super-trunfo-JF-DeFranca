@@ -174,10 +174,12 @@ int main() {
     case 4:
       if (populacao > populacao2)
       {
-        printf ("A População da cidade 1 Ganhou !\n");
+        printf ("Carta 1: %lu  Carta 2: %lu \n", populacao, populacao2);
+        printf ("A População da Carta 1 Ganhou !\n");
       } else if (populacao < populacao2)
       {
-        printf ("A População da cidade 2 Ganhou !\n");
+        printf ("Carta 1: %lu  Carta 2: %lu \n", populacao, populacao2);
+        printf ("A População da Carta 2 Ganhou !\n");
       } else {
         printf ("HOUVE UM EMPATE!\n");
       }
@@ -186,9 +188,11 @@ int main() {
     case 5:
       if (area > area2)
       {
-        printf ("A Área da cidade 1 Ganhou !\n");
+        printf ("Carta 1: %.2f  Carta 2: %.2f \n", area, area2);
+        printf ("A Área da Carta 1 Ganhou !\n");
       } else if (area < area2)
       {
+        printf ("Carta 1: %.2f  Carta 2: %.2f \n", area, area2);
         printf ("A Área da cidade 2 Ganhou !\n");
       } else {
         printf ("HOUVE UM EMPATE!\n");
@@ -198,11 +202,14 @@ int main() {
     case 6:
       if (pib > pib2)
       {
-        printf ("O PIB da cidade 1 Ganhou !\n");
+        printf ("Carta 1: %.2f  Carta 2: %.2f \n", pib, pib2);
+        printf ("O PIB da Carta 1 Ganhou !\n");
       } else if (pib < pib2)
       {
-        printf ("O PIB da cidade 2 Ganhou !\n");
+        printf ("Carta 1: %.2f  Carta 2: %.2f \n", pib, pib2);
+        printf ("O PIB da Carta 2 Ganhou !\n");
       } else {
+        printf ("Carta 1: %.2f  Carta 2: %.2f \n", pib, pib2);
         printf ("HOUVE UM EMPATE!\n");
       }
         break;
@@ -210,11 +217,14 @@ int main() {
     case 7:
       if (pontos_turisticos > pontos_turisticos2)
       {
-        printf ("Os Pontos Turísticos da cidade 1 Ganhou !\n");
+        printf ("Carta 1: %d  Carta 2: %d \n", pontos_turisticos, pontos_turisticos2);
+        printf ("Os Pontos Turísticos da Carta 1 Ganharam !\n");
       } else if (pontos_turisticos < pontos_turisticos2)
       {
-        printf ("Os Pontos Turísticos da cidade 2 Ganhou !\n");
+        printf ("Carta 1: %d  Carta 2: %d \n", pontos_turisticos, pontos_turisticos2);
+        printf ("Os Pontos Turísticos da Carta 2 Ganharam !\n");
       } else {
+        printf ("Carta 1: %d  Carta 2: %d \n", pontos_turisticos, pontos_turisticos2);
         printf ("HOUVE UM EMPATE!\n");
       }
         break;
@@ -222,11 +232,14 @@ int main() {
     case 8:
       if (densidadepop2 > densidadepop)
       {
-        printf ("A Densidade Populacional da cidade 1 Ganhou !\n");
+        printf ("Carta 1: %.2f  Carta 2: %.2f \n", densidadepop, densidadepop2);
+        printf ("A Densidade Populacional da Carta 1 Ganhou !\n");
       } else if (densidadepop2 < densidadepop)
       {
-        printf ("A Densidade Populacional da cidade 2 Ganhou !\n");
+        printf ("Carta 1: %.2f  Carta 2: %.2f \n", densidadepop, densidadepop2);
+        printf ("A Densidade Populacional da Carta 2 Ganhou !\n");
       } else {
+        printf ("Carta 1: %.2f  Carta 2: %.2f \n", densidadepop, densidadepop2);
         printf ("HOUVE UM EMPATE!\n");
       }
         break;
@@ -234,11 +247,14 @@ int main() {
     case 9:
       if (pibpercapita > pibpercapita2)
       {
-        printf ("O PIB per Capita da cidade 1 Ganhou !\n");
+        printf ("Carta 1: %.2f  Carta 2: %.2f \n", pibpercapita, pibpercapita2);
+        printf ("O PIB per Capita da Carta 1 Ganhou !\n");
       } else if (pibpercapita < pibpercapita2)
       {
-        printf ("O PIB per Capita da cidade 2 Ganhou !\n");
+        printf ("Carta 1: %.2f  Carta 2: %.2f \n", pibpercapita, pibpercapita2);
+        printf ("O PIB per Capita da Carta 2 Ganhou !\n");
       } else {
+        printf ("Carta 1: %.2f  Carta 2: %.2f \n", pibpercapita, pibpercapita2);
         printf ("HOUVE UM EMPATE!\n");
       }
         break;
@@ -246,11 +262,14 @@ int main() {
     case 10:
       if (super_poder > super_poder2)
       {
-        printf ("O Super Poder da cidade 1 Ganhou !\n");
+        printf ("Carta 1: %f  Carta 2: %f \n", super_poder, super_poder2);
+        printf ("O Super Poder da Carta 1 Ganhou !\n");
       } else if (super_poder < super_poder2)
       {
-        printf ("O Super Poder da cidade 2 Ganhou !\n");
+        printf ("Carta 1: %f  Carta 2: %f \n", super_poder, super_poder2);
+        printf ("O Super Poder da Carta 2 Ganhou !\n");
       } else {
+        printf ("Carta 1: %f  Carta 2: %f \n", super_poder, super_poder2);
         printf ("HOUVE UM EMPATE!\n");
       }
         break;
