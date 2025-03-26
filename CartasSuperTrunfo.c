@@ -55,7 +55,7 @@ int main() {
     printf("Vamos cadastrar a segunda carta, digite o codigo da carta 2 Ex (AO1, AO2...): ");
     scanf("%s", codigo2);
 
-    printf("Digite o estado da carta 1: ");
+    printf("Digite o estado da carta 2: ");
     scanf("%s", estado2);
 
     printf("Qual o nome da cidade da carta 2: ");
@@ -133,9 +133,9 @@ int main() {
 
     printf("\n====COMPARAÇÃO DAS CARTAS====\n");
 
-    int escolhaComparacao;
+    int escolhaComparacao1, escolhaComparacao2;
 
-    printf("====ESCOLHA O ATRIBUTO QUE DESEJA COMPARAR ENTRE AS CARTAS====\n");
+    printf("====ESCOLHA O PRIMEIRO ATRIBUTO QUE DESEJA COMPARAR ENTRE AS CARTAS====\n");
 
     printf("1. CÓDIGO\n");
     printf("2. ESTADO\n");
@@ -148,146 +148,139 @@ int main() {
     printf("9. PIB PER CAPITA\n");
     printf("10. SUPER PODER\n");
     printf("Escolha uma opção: ");
-    scanf("%d", &escolhaComparacao);
+    scanf("%d", &escolhaComparacao1);
 
 
-    // Exibição do Resultado das Comparações
+    printf("====ESCOLHA O SEGUNDO ATRIBUTO QUE DESEJA COMPARAR ENTRE AS CARTAS====\n");
+
+    printf("1. CÓDIGO\n");
+    printf("2. ESTADO\n");
+    printf("3. NOME DA CIDADE\n");
+    printf("4. POPULAÇÃO\n");
+    printf("5. ÁREA\n");
+    printf("6. PIB\n");
+    printf("7. PONTOS TURÍSTICOS\n");
+    printf("8. DENSIDADE POPULACIONAL\n");
+    printf("9. PIB PER CAPITA\n");
+    printf("10. SUPER PODER\n");
+    printf("Escolha uma opção: ");
+    scanf("%d", &escolhaComparacao2);
 
 
-   switch (escolhaComparacao)
-    {
-    case 1:
-     printf ("O Código da Carta 1 é: %s\n", codigo);
-     printf ("O Código da Carta 2 é: %s\n", codigo2);
-        break;
 
-    case 2:
-     printf ("O Estado da Carta 1 é: %s\n", estado);
-     printf ("O Estado da Carta 2 é: %s\n", estado2);
-        break;
-
-    case 3:
-     printf ("A Cidade da Carta 1 é: %s\n", nome); 
-     printf ("A Cidade da Carta 2 é: %s\n", nome2);  
-        break;
-
-    case 4:
-      if (populacao > populacao2)
-      {
-        printf ("Carta 1: %lu  Carta 2: %lu \n", populacao, populacao2);
-        printf ("A População da Carta 1 Ganhou !\n");
-      } else if (populacao < populacao2)
-      {
-        printf ("Carta 1: %lu  Carta 2: %lu \n", populacao, populacao2);
-        printf ("A População da Carta 2 Ganhou !\n");
-      } else {
-        printf ("HOUVE UM EMPATE!\n");
+    if (escolhaComparacao1 == escolhaComparacao2) {
+      printf("Você escolheu o mesmo atributo!"); 
+  } else {
+      // Comparações para o primeiro atributo
+      switch (escolhaComparacao1) {
+          case 1:
+              printf ("VOCÊ ESCOLHEU A OPÇÃO CÓDIGO\n");
+              printf ("O Código da Carta 1 é: %s\n", codigo);
+              printf ("O Código da Carta 2 é: %s\n", codigo2);     
+              break;
+          case 2:
+              printf ("VOCÊ ESCOLHEU A OPÇÃO ESTADO\n");
+              printf ("O Estado da Carta 1 é: %s\n", estado);
+              printf ("O Estado da Carta 2 é: %s\n", estado2);
+              break;
+          case 3:
+              printf ("VOCÊ ESCOLHEU A OPÇÃO CIDADE\n");
+              printf ("A Cidade da Carta 1 é: %s\n", nome); 
+              printf ("A Cidade da Carta 2 é: %s\n", nome2); 
+              break;
+          case 4:
+              printf ("VOCÊ ESCOLHEU A OPÇÃO POPULAÇÃO\n");
+              escolhaComparacao1 = populacao > populacao2 ? 1 : 0; 
+              break;
+          case 5:
+              printf ("VOCÊ ESCOLHEU A OPÇÃO ÁREA\n");
+              escolhaComparacao1 = area > area2 ? 1 : 0; 
+              break;
+          case 6:
+              printf ("VOCÊ ESCOLHEU A OPÇÃO PIB\n");
+              escolhaComparacao1 = pib > pib2 ? 1 : 0; 
+              break;
+          case 7:
+              printf ("VOCÊ ESCOLHEU A OPÇÃO PONTOS TURÍSTICOS\n");
+              escolhaComparacao1 = pontos_turisticos > pontos_turisticos2 ? 1 : 0;
+              break;
+          case 8:
+              printf ("VOCÊ ESCOLHEU A OPÇÃO DENSIDADE POPULACIONAL\n");
+              escolhaComparacao1 = densidadepop > densidadepop2 ? 1 : 0;
+              break;
+          case 9:
+              printf ("VOCÊ ESCOLHEU A OPÇÃO PIB PER CAPITA\n");
+              escolhaComparacao1 = pibpercapita > pibpercapita2 ? 1 : 0;
+              break;
+          case 10:
+              printf ("VOCÊ ESCOLHEU A OPÇÃO SUPER PODER\n");
+              escolhaComparacao1 = super_poder > super_poder2 ? 1 : 0; 
+              break;
+          default:
+              printf ("OPÇÃO INVÁLIDA\n");
+              break;
       }
-        break;
 
-    case 5:
-      if (area > area2)
-      {
-        printf ("Carta 1: %.2f  Carta 2: %.2f \n", area, area2);
-        printf ("A Área da Carta 1 Ganhou !\n");
-      } else if (area < area2)
-      {
-        printf ("Carta 1: %.2f  Carta 2: %.2f \n", area, area2);
-        printf ("A Área da cidade 2 Ganhou !\n");
-      } else {
-        printf ("HOUVE UM EMPATE!\n");
+      // Comparações para o segundo atributo
+      switch (escolhaComparacao2) {
+          case 1:
+              printf ("VOCÊ ESCOLHEU A OPÇÃO CÓDIGO\n");
+              printf ("O Código da Carta 1 é: %s\n", codigo);
+              printf ("O Código da Carta 2 é: %s\n", codigo2);     
+              break;
+          case 2:
+              printf ("VOCÊ ESCOLHEU A OPÇÃO ESTADO\n");
+              printf ("O Estado da Carta 1 é: %s\n", estado);
+              printf ("O Estado da Carta 2 é: %s\n", estado2);
+              break;
+          case 3:
+              printf ("VOCÊ ESCOLHEU A OPÇÃO CIDADE\n");
+              printf ("A Cidade da Carta 1 é: %s\n", nome); 
+              printf ("A Cidade da Carta 2 é: %s\n", nome2); 
+              break;
+          case 4:
+              printf ("VOCÊ ESCOLHEU A OPÇÃO POPULAÇÃO\n");
+              escolhaComparacao2 = populacao > populacao2 ? 1 : 0; 
+              break;
+          case 5:
+              printf ("VOCÊ ESCOLHEU A OPÇÃO ÁREA\n");
+              escolhaComparacao2 = area > area2 ? 1 : 0; 
+              break;
+          case 6:
+              printf ("VOCÊ ESCOLHEU A OPÇÃO PIB\n");
+              escolhaComparacao2 = pib > pib2 ? 1 : 0; 
+              break;
+          case 7:
+              printf ("VOCÊ ESCOLHEU A OPÇÃO PONTOS TURÍSTICOS\n");
+              escolhaComparacao2 = pontos_turisticos > pontos_turisticos2 ? 1 : 0;
+              break;
+          case 8:
+              printf ("VOCÊ ESCOLHEU A OPÇÃO DENSIDADE POPULACIONAL\n");
+              escolhaComparacao2 = densidadepop > densidadepop2 ? 1 : 0;
+              break;
+          case 9:
+              printf ("VOCÊ ESCOLHEU A OPÇÃO PIB PER CAPITA\n");
+              escolhaComparacao2 = pibpercapita > pibpercapita2 ? 1 : 0;
+              break;
+          case 10:
+              printf ("VOCÊ ESCOLHEU A OPÇÃO SUPER PODER\n");
+              escolhaComparacao2 = super_poder > super_poder2 ? 1 : 0; 
+              break;
+          default:
+              printf ("OPÇÃO INVÁLIDA\n");
+              break;
       }
-        break;
 
-    case 6:
-      if (pib > pib2)
-      {
-        printf ("Carta 1: %.2f  Carta 2: %.2f \n", pib, pib2);
-        printf ("O PIB da Carta 1 Ganhou !\n");
-      } else if (pib < pib2)
-      {
-        printf ("Carta 1: %.2f  Carta 2: %.2f \n", pib, pib2);
-        printf ("O PIB da Carta 2 Ganhou !\n");
-      } else {
-        printf ("Carta 1: %.2f  Carta 2: %.2f \n", pib, pib2);
-        printf ("HOUVE UM EMPATE!\n");
-      }
-        break;
-
-    case 7:
-      if (pontos_turisticos > pontos_turisticos2)
-      {
-        printf ("Carta 1: %d  Carta 2: %d \n", pontos_turisticos, pontos_turisticos2);
-        printf ("Os Pontos Turísticos da Carta 1 Ganharam !\n");
-      } else if (pontos_turisticos < pontos_turisticos2)
-      {
-        printf ("Carta 1: %d  Carta 2: %d \n", pontos_turisticos, pontos_turisticos2);
-        printf ("Os Pontos Turísticos da Carta 2 Ganharam !\n");
-      } else {
-        printf ("Carta 1: %d  Carta 2: %d \n", pontos_turisticos, pontos_turisticos2);
-        printf ("HOUVE UM EMPATE!\n");
-      }
-        break;
-
-    case 8:
-      if (densidadepop2 > densidadepop)
-      {
-        printf ("Carta 1: %.2f  Carta 2: %.2f \n", densidadepop, densidadepop2);
-        printf ("A Densidade Populacional da Carta 1 Ganhou !\n");
-      } else if (densidadepop2 < densidadepop)
-      {
-        printf ("Carta 1: %.2f  Carta 2: %.2f \n", densidadepop, densidadepop2);
-        printf ("A Densidade Populacional da Carta 2 Ganhou !\n");
-      } else {
-        printf ("Carta 1: %.2f  Carta 2: %.2f \n", densidadepop, densidadepop2);
-        printf ("HOUVE UM EMPATE!\n");
-      }
-        break;
-
-    case 9:
-      if (pibpercapita > pibpercapita2)
-      {
-        printf ("Carta 1: %.2f  Carta 2: %.2f \n", pibpercapita, pibpercapita2);
-        printf ("O PIB per Capita da Carta 1 Ganhou !\n");
-      } else if (pibpercapita < pibpercapita2)
-      {
-        printf ("Carta 1: %.2f  Carta 2: %.2f \n", pibpercapita, pibpercapita2);
-        printf ("O PIB per Capita da Carta 2 Ganhou !\n");
-      } else {
-        printf ("Carta 1: %.2f  Carta 2: %.2f \n", pibpercapita, pibpercapita2);
-        printf ("HOUVE UM EMPATE!\n");
-      }
-        break;
-
-    case 10:
-      if (super_poder > super_poder2)
-      {
-        printf ("Carta 1: %f  Carta 2: %f \n", super_poder, super_poder2);
-        printf ("O Super Poder da Carta 1 Ganhou !\n");
-      } else if (super_poder < super_poder2)
-      {
-        printf ("Carta 1: %f  Carta 2: %f \n", super_poder, super_poder2);
-        printf ("O Super Poder da Carta 2 Ganhou !\n");
-      } else {
-        printf ("Carta 1: %f  Carta 2: %f \n", super_poder, super_poder2);
-        printf ("HOUVE UM EMPATE!\n");
-      }
-        break;
-   
-    default:
-       printf("OPÇÃO INVÁLIDA!\n");
-        break;
-    }
-
-
-
-
-
-
-
-
-    
-    return 0;
-
-
+  // Resultados da comparação
+  if (escolhaComparacao1 && escolhaComparacao2) { 
+    printf ("A Carta 1 Venceu as Duas Comparações\n");
+} else if (!escolhaComparacao1 && !escolhaComparacao2) {
+    printf ("A Carta 2 Venceu as Duas Comparações\n");     
+} else {
+    printf("Cada carta venceu uma comparação!\n");
 }
+}
+
+return 0;
+}
+
